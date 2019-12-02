@@ -19,12 +19,9 @@ def main():
     with open('input.txt', 'r') as file:
         data = file.readlines()
 
-    total_fuel = 0
+    fuel = [calculate_fuel(int(mass.strip())) for mass in data]
 
-    for mass in data:
-        total_fuel = total_fuel + calculate_fuel(int(mass.strip()))
-
-    print(total_fuel)
+    print(sum(fuel))
 
 
 if __name__ == '__main__':
