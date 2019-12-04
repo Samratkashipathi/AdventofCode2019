@@ -16,7 +16,7 @@ def calculate_fuel(mass: int) -> float:
 
 
 def main():
-    with open('input.txt', 'r') as file:
+    with open('input.txt.txt', 'r') as file:
         data = file.readlines()
 
     fuel = [calculate_fuel(int(mass.strip())) for mass in data]

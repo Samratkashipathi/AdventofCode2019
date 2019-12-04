@@ -39,9 +39,9 @@ fn part2(file_name: &str) -> f64 {
 }
 
 fn main() {
-    let part1_ans = part1("input.txt");
+    let part1_ans = part1("input.txt.txt");
     println!("Part 1 : {:#?}", part1_ans);
-    let part2_ans = part2("input.txt");
+    let part2_ans = part2("input.txt.txt");
     println!("Part 2 : {:#?}", part2_ans);
 }
 
